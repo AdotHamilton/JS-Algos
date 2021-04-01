@@ -169,17 +169,17 @@ function dollarAndCoinChange(cents){
             cents -= 25
             change.quarters += 1
         }
-        else if(cents < 10){
+        else if(cents >= 10){
             cents -= 10
             change.dimes += 1
         }
-        else if(cents < 5){
+        else if(cents >= 5){
             cents -= 5
             change["nickles"] += 1
         }
-        else if(cents < 1){
-            cents -= 1
-            change["pennies"] += 1
+        else if(cents < 5){
+            change["pennies"] += cents
+            cents = 0;
         }
     }
     return change;
