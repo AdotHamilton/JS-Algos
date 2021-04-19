@@ -15,7 +15,7 @@ class BST{
     // a BST also does not contain duplicates!
     add(value){
         var newNode = new Node(value);
-        if(this.root === null){
+        if(this.root === null){     
             this.root = newNode;
             return this;
         }
