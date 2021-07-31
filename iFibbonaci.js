@@ -15,7 +15,7 @@ const iFibonacci = (n) => {
     
 }
 console.log(iFibonacci(20));
-
+//O(n) linear
 const rFibbonacci = (n) => {
     if(n < 2){
         return n;
@@ -23,3 +23,4 @@ const rFibbonacci = (n) => {
     return rFibbonacci(n-1) + rFibbonacci(n-2)
 }
 console.log(rFibbonacci(20))
+// O(n)^2 exponential
